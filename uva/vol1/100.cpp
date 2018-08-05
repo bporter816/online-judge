@@ -1,11 +1,14 @@
 // 100 - The 3n + 1 Problem
-#include <cstdio>
+#include <iostream>
 #define swap(i, j) i = i ^ j; j = i ^ j; i = i ^ j;
+
+using namespace std;
 
 int main(int argc, char **argv)
 {
+    ios_base::sync_with_stdio(false);
     int i, j;
-    while (scanf("%d %d", &i, &j) != EOF) {
+    while (cin >> i >> j) {
         bool swapped = false;
         if (i > j) {
             swap(i, j);
@@ -26,9 +29,9 @@ int main(int argc, char **argv)
                 max = query;
         }
         if (swapped)
-            printf("%d %d %d\n", j, i, max);
+            cout << j << " " << i << " " << max << endl;
         else
-            printf("%d %d %d\n", i, j, max);
+            cout << i << " " << j << " " << max << endl;
     }
     return 0;
 }
