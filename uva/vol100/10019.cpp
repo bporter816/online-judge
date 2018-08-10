@@ -3,7 +3,8 @@
 
 using namespace std;
 
-int numOneBits(int n) {
+int numOneBits(int n)
+{
     int result = 0;
     while (n != 0) {
         n = n & (n - 1);
