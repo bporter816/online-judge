@@ -6,7 +6,6 @@ using namespace std;
 
 int main(int argc, char **argv)
 {
-    ios_base::sync_with_stdio(false);
     int b1, g1, c1, b2, g2, c2, b3, g3, c3;
     while (cin >> b1 >> g1 >> c1 >> b2 >> g2 >> c2 >> b3 >> g3 >> c3) {
         int min = INT_MAX, idx, query;

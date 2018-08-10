@@ -63,7 +63,6 @@ void pileOnto(int a, int b)
 
 int main(int argc, char **argv)
 {
-    ios_base::sync_with_stdio(false);
     int n;
     cin >> n;
     arr = vector<deque<int>>(n, deque<int>());
