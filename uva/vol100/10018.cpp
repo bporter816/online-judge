@@ -1,7 +1,7 @@
 // 10018 - Reverse and Add
 #include <iostream>
 
-typedef long long ll;
+#define ll long long
 
 using namespace std;
 
