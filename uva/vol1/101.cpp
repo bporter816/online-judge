@@ -55,6 +55,7 @@ void pileOver(int a, int b)
         temp.pop();
     }
 }
+
 void pileOnto(int a, int b)
 {
     resetUntil(lookup[b], b);
