@@ -1,3 +1,5 @@
+# Kattis - abc
+# Sort a list of three integers in a given order
 nums = [int(i) for i in input().split()]
 order = input()
 

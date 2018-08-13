@@ -1,3 +1,5 @@
+# Kattis - alphabet
+# Comparison of the length of two strings
 a = input()
 b = input()
 

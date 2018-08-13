@@ -1,4 +1,7 @@
+# Kattis - aboveaverage
+# Find the percentage of values in a list above the average
 c = int(input())
+
 for i in range(c):
     nums = [int(i) for i in input().split()]
     total = sum(nums[1:])
@@ -8,4 +11,3 @@ for i in range(c):
             count += 1
     answer = count / nums[0] * 100
     print(f'{answer:.3f}%')
-
