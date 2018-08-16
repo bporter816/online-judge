@@ -9,7 +9,7 @@ while n % 2 == 0:
     count += 1
     n /= 2
 root = int(sqrt(n))
-for i in range(3, root + 1):
+for i in range(3, root + 1, 2):
     while n % i == 0:
         count += 1
         n /= i
