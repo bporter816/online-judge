@@ -1,3 +1,5 @@
+// Kattis - moneymatters
+// The sum of values at each node per connected component should equal zero
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
