@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
-public class MoneyMatters {
+public class moneymatters {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int n = in.nextInt(), m = in.nextInt();
@@ -23,20 +23,16 @@ public class MoneyMatters {
             graph.get(to).add(from);
         }
         in.close();
-        boolean good = true;
         for (int i = 0; i < n; i++) {
             if (!visited[i]) {
                 int result = bfs(i, graph, visited, vals);
                 if (result != 0) {
-                    good = false;
                     System.out.println("IMPOSSIBLE");
-                    break;
+                    return;
                 }
             }
         }
-        if (good) {
-            System.out.println("POSSIBLE");
-        }
+        System.out.println("POSSIBLE");
     }
     public static int bfs(int start, ArrayList<ArrayList<Integer>> graph, boolean[] visited, int[] vals) {
         int sum = 0;
